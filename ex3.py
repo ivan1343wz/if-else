@@ -1,7 +1,9 @@
-USD_TO_RUB = 85.12
+#3
+month = int(input("Введите порядковый номер месяца: "))
 
-def convert_usd_to_rub(amount_usd):
-    return amount_usd * USD_TO_RUB
-usd = float(input("введите сумму в долларах"))
-rub = convert_usd_to_rub(usd)
-print(f"сумма в рублях: {rub:.2f} руб.")
+if month == 2:
+    print("Дней в вашем месяце: 28")
+elif month == (4, 6, 9, 11):
+    print("Дней в вашем месяце: 30")
+else:
+    print("Дней в вашем месяце: 31")
